@@ -49,10 +49,10 @@ class _ProductListScreenState extends State<ProductListScreen> {
           Center(
             child: badges.Badge(
               badgeContent: Text(
-                '3',
+                '0',
                 style: TextStyle(color: Colors.white),
               ),
-              child: Icon(Icons.settings),
+              child: Icon(Icons.shopping_bag_outlined),
             ),
           ),
           SizedBox(
