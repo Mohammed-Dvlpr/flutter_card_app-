@@ -1,29 +1,29 @@
-class Card {
+class Cart {
   late final int? id;
   final String? productId;
   final String? productName;
   final int? initialPrice;
-  final int? productPrince;
+  final int? productPrice;
   final int? quantity;
   final String? unitTag;
   final String? image;
 
-  Card(
+  Cart(
       {this.id,
       this.productId,
       this.productName,
       this.initialPrice,
-      this.productPrince,
+      this.productPrice,
       this.quantity,
       this.unitTag,
       this.image});
 
-  Card.formMap(Map<dynamic, dynamic> res)
+  Cart.formMap(Map<dynamic, dynamic> res)
       : id = res['id'],
         productId = res['productId'],
         productName = res['productName'],
         initialPrice = res['initialPrice'],
-        productPrince = res['productPrice'],
+        productPrice = res['productPrice'],
         quantity = res['quantity'],
         unitTag = res['unitTag'],
         image = res['image'];
@@ -34,7 +34,7 @@ class Card {
       'productId': productId,
       'productName': productName,
       'initialPrice': initialPrice,
-      'productPrice': productPrince,
+      'productPrice': productPrice,
       'quantity': quantity,
       'unitTag': unitTag,
       'image': image
